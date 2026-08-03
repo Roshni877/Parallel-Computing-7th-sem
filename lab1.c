@@ -98,3 +98,21 @@ int main() {
     free(arr_par);
     return 0;
 }
+
+
+To run: 
+gcc -fopenmp lab1.c -o lab1
+./lab1.exe  
+
+    
+Output: Sorting 100000 elements...
+
+Sequential Merge Sort Time: 0.017000 seconds
+Parallel Merge Sort Time:   0.012000 seconds
+
+Difference (Sequential - Parallel): 0.005000 seconds
+Speedup: 1.42x
+
+Verification: First 20 elements of the sorted array:
+0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 
+
